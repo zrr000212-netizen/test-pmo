@@ -1,0 +1,29 @@
+{
+  "name": "weekly-report-collector",
+  "version": "1.0.0",
+  "description": "周报收集器 - 交互式收集周报内容，支持多种输入方式和模板系统",
+  "author": "OpenClaw Community",
+  "license": "MIT",
+  "homepage": "https://github.com/openclaw/skills/weekly-report-collector",
+  "keywords": [
+    "weekly-report",
+    "report",
+    "collection",
+    "template",
+    "productivity"
+  ],
+  "dependencies": {
+    "python": ">=3.8"
+  },
+  "compatibility": {
+    "openclaw": ">=1.0.0"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "requirements.txt",
+    "scripts/",
+    "templates/",
+    "examples/"
+  ]
+}
