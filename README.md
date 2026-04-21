@@ -52,6 +52,30 @@ export SMTP_PASS="your-auth-code"
 - 结构化输出
 - 智能模板匹配
 
+### 4. gen-week-reporter-email-automation - 周报生成与邮件发送自动化
+完整的周报生成和邮件发送自动化工作流程，从生成周报到发送HTML邮件的完整流程。
+
+**功能特性:**
+- 自动生成git仓库周报
+- 清理版HTML格式转换
+- 自动移除不需要的元数据
+- 163邮箱SMTP集成
+- 完整的错误处理和日志记录
+- 支持定时任务自动化
+
+**快速开始:**
+```bash
+cd skills/gen-week-reporter-email-automation
+python3 scripts/weekly_report_full_automation.py
+```
+- 支持定时任务自动化
+
+**快速开始:**
+```bash
+cd skills/gen-week-reporter-email-automation
+python3 scripts/weekly_report_full_automation.py
+```
+
 ## 系统架构
 
 ```
@@ -188,6 +212,6 @@ MIT License
 
 ---
 
-**最后更新**: 2026-04-16
-**版本**: 1.0.0
+**最后更新**: 2026-04-21
+**版本**: 1.0.1
 **状态**: ✅ 所有技能已完全实现并测试
