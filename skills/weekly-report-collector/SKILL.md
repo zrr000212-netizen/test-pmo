@@ -1,6 +1,8 @@
 ---
 name: weekly-report-collector
 description: "周报收集器 - 交互式收集周报内容，支持多种输入方式和模板。与 smart-weekly-report 和 email-send 技能集成，实现完整的周报管理流程。"
+tags: [weekly-report, collector, email]
+version: 1.0.0
 metadata:
   {
     "openclaw":
@@ -15,7 +17,7 @@ metadata:
 
 # 周报收集器技能
 
-## 功能概述
+## 概述
 
 周报收集器是一个交互式工具，帮助用户收集、整理和结构化周报内容。支持多种输入方式，可与现有的 smart-weekly-report 和 email-send 技能无缝集成。
 
@@ -26,9 +28,16 @@ metadata:
 3. **文件导入** - 从 Markdown、JSON、CSV 文件导入
 4. **Git集成** - 从 Git 提交记录自动提取工作内容
 
+## 前置条件
+
+- Python 3.x 运行环境
+- 推荐安装 smart-weekly-report 技能（用于周报格式化）
+- 推荐安装 email-send 技能（用于周报邮件发送）
+
 ## 快速开始
 
 ### 交互式收集
+
 ```bash
 # 启动交互式周报收集
 python3 scripts/collect.py --interactive
@@ -41,6 +50,7 @@ python3 scripts/collect.py --file weekly_work.md
 ```
 
 ### 命令行参数
+
 ```bash
 python3 scripts/collect.py --help
 ```
@@ -48,17 +58,20 @@ python3 scripts/collect.py --help
 ## 模板系统
 
 ### 内置模板
+
 - `engineer` - 工程师周报模板
-- `manager` - 项目经理周报模板  
+- `manager` - 项目经理周报模板
 - `designer` - 设计师周报模板
 - `sales` - 销售周报模板
 
 ### 自定义模板
+
 在 `templates/` 目录下创建 `.md` 文件，格式参考 `templates/engineer.md`。
 
 ## 数据结构
 
 收集的周报数据保存为 JSON 格式：
+
 ```json
 {
   "report_id": "2026-04-15_weekly",
@@ -105,6 +118,7 @@ python3 scripts/send_report.py --report formatted_report.md --to "manager@exampl
 ## 配置
 
 ### 环境变量
+
 ```bash
 export WEEKLY_REPORT_STORAGE="$HOME/weekly-reports"
 export WEEKLY_REPORT_DEFAULT_TEMPLATE="engineer"
@@ -112,7 +126,9 @@ export WEEKLY_REPORT_AUTO_SAVE="true"
 ```
 
 ### 配置文件
-`~/.weekly-report-collector/config.json`:
+
+`~/.weekly-report-collector/config.json`：
+
 ```json
 {
   "default_template": "engineer",
@@ -130,6 +146,7 @@ export WEEKLY_REPORT_AUTO_SAVE="true"
 ## 示例
 
 ### 示例 1: 基本使用
+
 ```bash
 # 交互式收集周报
 python3 scripts/collect.py --interactive
@@ -142,6 +159,7 @@ python3 scripts/collect.py --interactive
 ```
 
 ### 示例 2: 使用模板
+
 ```bash
 # 使用工程师模板
 python3 scripts/collect.py --template engineer --output my_report.json
@@ -151,6 +169,7 @@ cat my_report.json | jq .
 ```
 
 ### 示例 3: 完整流程
+
 ```bash
 # 1. 收集周报
 python3 scripts/collect.py --interactive --output raw.json
@@ -167,16 +186,19 @@ python3 scripts/collect.py --interactive --output raw.json
 ## 开发指南
 
 ### 添加新模板
+
 1. 在 `templates/` 目录创建新模板文件
 2. 更新 `scripts/templates.py` 中的模板注册
 3. 测试模板使用
 
 ### 扩展输入源
+
 1. 在 `scripts/collect.py` 中添加新的收集器类
 2. 实现 `collect()` 方法
 3. 更新命令行参数解析
 
 ### 集成其他技能
+
 1. 查看目标技能的 API 文档
 2. 在 `scripts/integration.py` 中添加适配器
 3. 测试集成功能
@@ -184,11 +206,13 @@ python3 scripts/collect.py --interactive --output raw.json
 ## 故障排除
 
 ### 常见问题
+
 1. **模板找不到**: 检查 `templates/` 目录是否存在对应文件
 2. **权限错误**: 确保有写入 `storage_path` 的权限
 3. **导入失败**: 检查文件格式是否符合要求
 
 ### 调试模式
+
 ```bash
 python3 scripts/collect.py --debug --interactive
 ```
@@ -196,11 +220,18 @@ python3 scripts/collect.py --debug --interactive
 ## 更新日志
 
 ### v1.0.0
+
 - 初始版本发布
 - 支持交互式收集
 - 支持模板系统
 - 支持文件导入
 - 基础数据验证
 
+## 参考文档
+
+- [smart-weekly-report 技能 (smart-weekly-report) - 周报格式化与生成
+- [email-send 技能 (email-send) - 邮件发送功能
+
 ## 许可证
+
 MIT

@@ -15,6 +15,11 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
 
+# Email configuration from environment variables
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "your-email@163.com")
+SENDER_NAME = os.environ.get("SENDER_NAME", "your-name")
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL", "recipient@example.com")
+
 def check_dependencies():
     """检查依赖项"""
     print("🔍 检查依赖项...")
@@ -275,8 +280,8 @@ def main():
     print(f"📅 开始时间: {datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"📅 完成时间: {datetime.fromtimestamp(end_time).strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"⏱️  总耗时: {elapsed_time:.2f}秒")
-    print(f"📧 收件人: zhangranran6@huawei.com")
-    print(f"📧 发件人: zrr <zrr000212@163.com>")
+    print(f"📧 收件人: {RECEIVER_EMAIL}")
+    print(f"📧 发件人: {SENDER_NAME} <{SENDER_EMAIL}>")
     print(f"📄 原始周报: {os.path.basename(md_file)}")
     print(f"🌐 HTML报告: {os.path.basename(html_file) if html_file else '未生成'}")
     print(f"📋 发送日志: /home/developer/Desktop/email_send_log.txt")

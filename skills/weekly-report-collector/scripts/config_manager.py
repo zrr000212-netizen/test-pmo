@@ -4,6 +4,7 @@
 """
 
 import os
+import logging
 import json
 import argparse
 from pathlib import Path
@@ -132,10 +133,10 @@ class ConfigManager:
         """递归打印配置部分"""
         for key, value in config.items():
             if isinstance(value, dict):
-                print(" " * indent + f"{key}:")
+                logging.debug(" " * indent + f"{key}:")
                 self._print_config_section(value, indent + 2)
             else:
-                print(" " * indent + f"{key}: {value}")
+                logging.debug(" " * indent + f"{key}: {value}")
     
     def setup_interactive(self):
         """交互式配置向导"""
@@ -283,7 +284,7 @@ def main():
             pass  # 保持字符串类型
         
         if config_manager.set(key, value):
-            print(f"✅ 配置已更新: {key} = {value}")
+            logging.debug(f"配置已更新: {key} = {value}")
         else:
             print(f"❌ 配置更新失败")
     else:

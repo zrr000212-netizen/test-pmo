@@ -103,6 +103,7 @@ python3 scripts/config_manager.py --set default_template manager
 ## 🔧 配置说明
 
 ### 配置文件位置
+
 `~/.weekly-report-collector/config.json`
 
 ### 主要配置项
@@ -263,6 +264,7 @@ MIT License
 ## 📞 支持
 
 如有问题或建议：
+
 1. 查看 `examples/basic_usage.md`
 2. 使用 `--debug` 参数运行
 3. 提交 Issue 或 Pull Request

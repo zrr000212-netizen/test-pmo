@@ -3,6 +3,7 @@
 ## 概述
 
 这是一个完整的周报生成和邮件发送自动化工作流程系统。它整合了以下功能：
+
 1. 使用gen-week-reporter技能生成周报
 2. 创建清理版HTML格式（移除不需要的元数据）
 3. 发送HTML格式周报到指定邮箱
@@ -22,12 +23,14 @@
 ## 快速开始
 
 ### 方法1：完整工作流程
+
 ```bash
 cd /home/developer/Desktop
 python3 weekly_report_full_automation.py
 ```
 
 ### 方法2：使用快速启动脚本
+
 ```bash
 # 完整工作流程
 ./weekly_report_quick_start.sh full
@@ -52,6 +55,7 @@ python3 weekly_report_full_automation.py
 ```
 
 ### 方法3：分步执行
+
 ```bash
 # 步骤1：生成周报（使用gen-week-reporter技能）
 cd /home/developer/my-repos/huawei-developer-demo
@@ -67,7 +71,7 @@ python3 send_clean_report.py
 
 ## 文件结构
 
-```
+```text
 /home/developer/Desktop/
 ├── 最佳实践与用户反馈周报_YYYY年MM月DD日_gen-week-reporter生成.md    # 原始Markdown周报
 ├── 最佳实践与用户反馈周报_YYYY年MM月DD日_gen-week-reporter生成_clean.html  # 清理版HTML
@@ -82,6 +86,7 @@ python3 send_clean_report.py
 ## 工作流程
 
 ### 完整工作流程
+
 1. **检查环境**：验证git仓库、脚本文件和依赖项
 2. **生成周报**：使用gen-week-reporter技能生成Markdown周报
 3. **转换HTML**：创建清理版HTML格式，移除不需要的元数据
@@ -89,12 +94,14 @@ python3 send_clean_report.py
 5. **记录日志**：保存发送记录和时间戳
 
 ### 快速发送模式
+
 1. **查找HTML文件**：自动查找最新的清理版HTML周报文件
 2. **发送邮件**：直接发送已生成的HTML周报
 
 ## 移除的元数据
 
 清理版HTML会移除以下元数据：
+
 1. ❌ 报告生成时间
 2. ❌ 数据来源
 3. ❌ 监控周期
@@ -106,10 +113,11 @@ python3 send_clean_report.py
 ## 邮箱配置
 
 默认配置：
-- **发件人**：zrr <zrr000212@163.com>
-- **收件人**：zhangranran6@huawei.com
+
+- **发件人**：zrr <${SENDER_EMAIL}>
+- **收件人**：${RECEIVER_EMAIL}
 - **SMTP服务器**：smtp.163.com:465 (SSL)
-- **客户端授权码**：KCshe35VeVGRTDqV
+- **客户端授权码**：${SMTP_AUTH_CODE}
 
 修改配置：编辑脚本文件中的相关变量。
 
@@ -118,22 +126,26 @@ python3 send_clean_report.py
 ### 常见问题
 
 1. **周报文件不存在**
-   ```
+
+   ```text
    解决方案：先使用gen-week-reporter技能生成周报
    ```
 
 2. **HTML文件不存在**
-   ```
+
+   ```text
    解决方案：先运行create_clean_report.py生成HTML文件
    ```
 
 3. **发送失败：认证错误**
-   ```
+
+   ```text
    解决方案：检查客户端授权码是否正确
    ```
 
 4. **发送失败：连接超时**
-   ```
+
+   ```text
    解决方案：检查网络连接，确认SMTP服务器地址和端口
    ```
 
@@ -201,10 +213,12 @@ echo "$(date): 周报自动发送完成" >> /home/developer/Desktop/weekly_repor
 ## 日志和监控
 
 ### 发送日志
+
 所有发送操作记录在：`/home/developer/Desktop/email_send_log.txt`
 格式：`YYYY-MM-DD HH:MM:SS - 发送清理版HTML周报到 收件人邮箱 - 文件: 文件名`
 
 ### 查看日志
+
 ```bash
 # 查看所有发送记录
 cat /home/developer/Desktop/email_send_log.txt
@@ -219,26 +233,33 @@ grep "$(date +%Y-%m-%d)" /home/developer/Desktop/email_send_log.txt
 ## 扩展功能
 
 ### 1. 多收件人支持
+
 修改脚本支持多个收件人
 
 ### 2. 附件功能
+
 支持添加PDF或Word版本附件
 
 ### 3. 模板系统
+
 支持多种邮件模板选择
 
 ### 4. 发送统计
+
 统计发送成功率和打开率
 
 ### 5. 错误重试
+
 发送失败时自动重试
 
 ### 6. 内容验证
+
 发送前检查邮件内容完整性
 
 ## 更新日志
 
 ### v1.0 (2026-04-21)
+
 - 初始版本发布
 - 完整的周报生成和邮件发送工作流程
 - 自动清理元数据功能
@@ -251,6 +272,7 @@ grep "$(date +%Y-%m-%d)" /home/developer/Desktop/email_send_log.txt
 ## 联系支持
 
 如有问题或建议，请联系：
+
 - 作者：zrr
-- 邮箱：zrr000212@163.com
+- 邮箱：${SENDER_EMAIL}
 - 更新时间：2026年04月21日

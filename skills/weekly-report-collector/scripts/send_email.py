@@ -5,6 +5,7 @@
 """
 
 import os
+import logging
 import sys
 import json
 import argparse
@@ -74,7 +75,7 @@ class ReportEmailSender:
         required = ["smtp_host", "smtp_user", "smtp_password"]
         for key in required:
             if not email_config.get(key):
-                print(f"❌ 缺少必要配置: email.{key}")
+                logging.debug(f"缺少必要配置: email.{key}")
                 return False
         
         # 确定收件人
@@ -300,7 +301,7 @@ def main():
         print(f"✅ 启用状态: {'是' if status['enabled'] else '否'}")
         print(f"📧 SMTP服务器: {status['smtp_host']}:{status['smtp_port']}")
         print(f"👤 发件人: {status['smtp_user']}")
-        print(f"🔐 密码配置: {'已设置' if status['has_password'] else '未设置'}")
+        logging.debug(f"密码配置: {'已设置' if status['has_password'] else '未设置'}")
         print(f"📨 默认收件人: {', '.join(status['default_recipients'])}")
         print(f"📦 msmtp安装: {'是' if status['msmtp_installed'] else '否'}")
         print(f"📁 配置文件: {'存在' if status['config_file'] else '不存在'}")
