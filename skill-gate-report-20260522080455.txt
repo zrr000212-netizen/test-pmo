@@ -1,0 +1,1564 @@
+========================================================================
+  Skill Gate Audit Report
+  Scan target: /tmp/pmo-skill/skills
+  Skills scanned: 4
+  Generated: 2026-05-22 08:04:55 UTC
+========================================================================
+
+── 1. Scanned Skills ──
+
+  ✔ email-send
+  ✔ gen-week-reporter-email-automation
+  ✔ smart-weekly-report
+  ✔ weekly-report-collector
+
+── 2. Issue Summary ──
+
+  ERROR    354  MD013 x4, MD022 x165, MD031 x47, MD032 x70, MD033 x1, MD034 x5, MD036 x2, MD040 x28, MD041 x1, MD047 x8, MD058 x8, frontmatter x5, frontmatter.description.required x1, frontmatter.name.required x1, section x8 (markdownlint, skillcheck, hwcloud-spec)
+  WARNING   14  disclosure.body-budget x1, disclosure.metadata-budget x2, frontmatter.field.unknown x3, frontmatter.version-format x1, section.missing-recommended x7 (skillcheck)
+
+── 3. Issue Details ──
+
+  [ERROR] smart-weekly-report — frontmatter.name.required
+    frontmatter.name.required
+    Required field 'name' is missing from frontmatter.
+
+  [ERROR] smart-weekly-report — frontmatter.description.required
+    frontmatter.description.required
+    Required field 'description' is missing from frontmatter.
+
+  [ERROR] pmo-skill/skills/email-send/CLAUDE.md — MD033/no-inline-html
+    L1  MD033/no-inline-html
+    Inline HTML [Element: claude-mem-context]
+
+  [ERROR] pmo-skill/skills/email-send/CLAUDE.md — MD041/first-line-heading/first-line-h1
+    L1  MD041/first-line-heading/first-line-h1
+    First line in a file should be a top-level heading [Context: "<claude-mem-context>"]
+
+  [ERROR] pmo-skill/skills/email-send/CLAUDE.md — MD013/line-length
+    L4  MD013/line-length
+    Line length [Expected: 80; Actual: 85]
+
+  [ERROR] pmo-skill/skills/email-send/CLAUDE.md — MD058/blanks-around-tables
+    L10  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| #51050 | 8:16 AM | 🟣 | Adde..."]
+
+  [ERROR] pmo-skill/skills/email-send/CLAUDE.md — MD047/single-trailing-newline
+    L11  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] pmo-skill/skills/email-send/SKILL.md — MD013/line-length
+    L26  MD013/line-length
+    Line length [Expected: 80; Actual: 139]
+
+  [ERROR] pmo-skill/skills/email-send/SKILL.md — MD013/line-length
+    L39  MD013/line-length
+    Line length [Expected: 80; Actual: 115]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD032/blanks-around-lists
+    L6  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 使用gen-week-reporter技能生成周报"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L24  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 方法1：完整工作流程"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L25  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L30  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 方法2：使用快速启动脚本"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L31  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L54  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 方法3：分步执行"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L55  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD040/fenced-code-language
+    L70  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L84  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 完整工作流程"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD032/blanks-around-lists
+    L85  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **检查环境**：验证git仓库、脚本文件和依赖项"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L91  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 快速发送模式"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD032/blanks-around-lists
+    L92  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **查找HTML文件**：自动查找最新的清理版HTML..."]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD032/blanks-around-lists
+    L98  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. ❌ 报告生成时间"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD032/blanks-around-lists
+    L109  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **发件人**：zrr <zrr000212@163.c..."]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD034/no-bare-urls
+    L110  MD034/no-bare-urls
+    Bare URL used [Context: "zhangranran6@huawei.com"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L121  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD040/fenced-code-language
+    L121  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L126  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD040/fenced-code-language
+    L126  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L131  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD040/fenced-code-language
+    L131  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L136  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD040/fenced-code-language
+    L136  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L203  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 发送日志"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L207  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 查看日志"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD031/blanks-around-fences
+    L208  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L221  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 1. 多收件人支持"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L224  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 2. 附件功能"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L227  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 3. 模板系统"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L230  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 4. 发送统计"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L233  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 5. 错误重试"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L236  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 6. 内容验证"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD022/blanks-around-headings
+    L241  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### v1.0 (2026-04-21)"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD032/blanks-around-lists
+    L242  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 初始版本发布"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD032/blanks-around-lists
+    L254  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 作者：zrr"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD034/no-bare-urls
+    L255  MD034/no-bare-urls
+    Bare URL used [Context: "zrr000212@163.com"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/references/README.md — MD047/single-trailing-newline
+    L256  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L15  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 使用gen-week-reporter技能生成周报"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L23  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 生成周报并发送邮件"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L29  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 完整工作流程"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L30  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **检查环境**：验证git仓库、脚本文件和依赖项"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L36  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 快速工作流程（已有周报文件）"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L37  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **查找最新周报**：自动查找桌面上的最新周报文件"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L43  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 1. 邮箱配置"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L44  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 发件人邮箱：zrr000212@163.com"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD034/no-bare-urls
+    L44  MD034/no-bare-urls
+    Bare URL used [Context: "zrr000212@163.com"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD034/no-bare-urls
+    L47  MD034/no-bare-urls
+    Bare URL used [Context: "zhangranran6@huawei.com"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L50  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 2. 文件依赖"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L51  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- Python 3.x环境"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L55  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 3. 脚本文件位置"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L57  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- `create_clean_report.py` - 创..."]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L62  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 方法1：完整自动化流程（推荐）"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L63  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L71  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 方法2：分步执行"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L72  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L90  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 方法3：快速发送（已有周报文件）"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L91  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L104  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 导航到git仓库目录"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L118  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 查找最新的周报文件"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L137  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 读取清理版HTML文件"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L148  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 周报文件查找"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L150  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 查找所有包含"周报"的.md文件"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L155  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### HTML文件生成"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L157  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 输入：`最佳实践与用户反馈周报_YYYY年MM月DD日_..."]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L162  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### create_clean_report.py"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L163  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```python"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L185  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### send_clean_report.py"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L186  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```python"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L208  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### weekly_report_automation.py"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L209  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```python"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L226  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 清理版邮件特点"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L227  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **简洁专业**：移除所有冗余元数据，只保留核心内容"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L238  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 移除的元数据说明"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L240  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **报告生成时间**：邮件发送时间已经足够"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L266  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "#### 1. 周报文件不存在"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L267  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD040/fenced-code-language
+    L267  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L272  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "#### 2. HTML文件不存在"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L273  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD040/fenced-code-language
+    L273  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L278  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "#### 3. 发送失败：认证错误"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L279  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD040/fenced-code-language
+    L279  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L284  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "#### 4. 发送失败：连接超时"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L285  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD040/fenced-code-language
+    L285  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L290  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "#### 5. 脚本文件不存在"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L291  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD040/fenced-code-language
+    L291  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L297  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 测试连接"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L298  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L311  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 文件权限检查"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L312  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L323  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 设置定时任务（Cron Job）"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L334  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 完整自动化脚本"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L335  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L360  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 发送日志"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L364  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 查看日志"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L365  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD040/fenced-code-language
+    L378  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L393  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 1. 多收件人支持"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L394  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```python"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L399  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 2. 附件功能"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L402  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 3. 模板系统"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L405  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 4. 发送统计"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L408  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 5. 错误重试"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L411  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 6. 内容验证"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L416  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 1. 定期清理"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L417  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L422  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 2. 备份重要文件"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L423  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD013/line-length
+    L425  MD013/line-length
+    Line length [Expected: 80; Actual: 104]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L428  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 3. 监控发送状态"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L429  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L434  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 4. 测试发送"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD031/blanks-around-fences
+    L435  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD022/blanks-around-headings
+    L442  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### v1.0 (2026-04-21)"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L443  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 初始版本发布"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD032/blanks-around-lists
+    L453  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 作者：zrr"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD034/no-bare-urls
+    L454  MD034/no-bare-urls
+    Bare URL used [Context: "zrr000212@163.com"]
+
+  [ERROR] pmo-skill/skills/gen-week-reporter-email-automation/SKILL.md — MD047/single-trailing-newline
+    L455  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD022/blanks-around-headings
+    L36  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 最简模式（30 秒）"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD031/blanks-around-fences
+    L37  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD040/fenced-code-language
+    L37  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD022/blanks-around-headings
+    L41  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 标准模式（1 分钟）"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD031/blanks-around-fences
+    L42  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD040/fenced-code-language
+    L42  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD022/blanks-around-headings
+    L46  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 详细模式（最完整）"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD031/blanks-around-fences
+    L47  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD040/fenced-code-language
+    L47  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD040/fenced-code-language
+    L62  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD022/blanks-around-headings
+    L111  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 作为系统提示词使用"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD022/blanks-around-headings
+    L114  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 团队统一模板"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD022/blanks-around-headings
+    L117  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 历史数据对比"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/README.md — MD036/no-emphasis-as-heading
+    L128  MD036/no-emphasis-as-heading
+    Emphasis used instead of a heading [Context: "周报生成器 · Prompt-based Skill · 无..."]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD032/blanks-around-lists
+    L32  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 本周完成了哪些工作/任务？"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L53  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L86  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L121  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L153  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L193  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L235  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L275  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L308  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L340  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD022/blanks-around-headings
+    L375  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 洞察优先，而非数据堆砌"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD022/blanks-around-headings
+    L379  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 量化结果，而非描述过程"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD022/blanks-around-headings
+    L383  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 问题要有后续行动"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD022/blanks-around-headings
+    L387  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 计划要具体可执行"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD022/blanks-around-headings
+    L395  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 最简模式"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD031/blanks-around-fences
+    L396  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L396  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD022/blanks-around-headings
+    L400  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 标准模式"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD031/blanks-around-fences
+    L401  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L401  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD022/blanks-around-headings
+    L405  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 详细模式"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD031/blanks-around-fences
+    L406  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD040/fenced-code-language
+    L406  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/smart-weekly-report/SKILL.md — MD036/no-emphasis-as-heading
+    L420  MD036/no-emphasis-as-heading
+    Emphasis used instead of a heading [Context: "周报生成器 · Prompt-based Skill · 无..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/examples/basic_usage.md — MD031/blanks-around-fences
+    L283  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/examples/basic_usage.md — MD031/blanks-around-fences
+    L290  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/examples/basic_usage.md — MD031/blanks-around-fences
+    L299  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/examples/basic_usage.md — MD031/blanks-around-fences
+    L306  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/examples/basic_usage.md — MD032/blanks-around-lists
+    L403  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 检查日志文件"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/examples/basic_usage.md — MD047/single-trailing-newline
+    L406  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/README.md — MD022/blanks-around-headings
+    L105  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 配置文件位置"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/README.md — MD040/fenced-code-language
+    L173  MD040/fenced-code-language
+    Fenced code blocks should have a language specified [Context: "```"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/README.md — MD032/blanks-around-lists
+    L266  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 查看 `examples/basic_usage.md..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/README.md — MD047/single-trailing-newline
+    L268  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L31  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 交互式收集"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L32  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L43  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 命令行参数"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L44  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L50  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 内置模板"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD032/blanks-around-lists
+    L51  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- `engineer` - 工程师周报模板"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L56  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 自定义模板"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L62  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```json"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L107  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 环境变量"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L108  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L114  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 配置文件"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L116  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```json"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L132  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 示例 1: 基本使用"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L133  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L144  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 示例 2: 使用模板"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L145  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L153  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 示例 3: 完整流程"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L154  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L169  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 添加新模板"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD032/blanks-around-lists
+    L170  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 在 `templates/` 目录创建新模板文件"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L174  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 扩展输入源"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD032/blanks-around-lists
+    L175  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 在 `scripts/collect.py` 中添加新..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L179  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 集成其他技能"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD032/blanks-around-lists
+    L180  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. 查看目标技能的 API 文档"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L186  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 常见问题"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD032/blanks-around-lists
+    L187  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **模板找不到**: 检查 `templates/` ..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L191  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 调试模式"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD031/blanks-around-fences
+    L192  MD031/blanks-around-fences
+    Fenced code blocks should be surrounded by blank lines [Context: "```bash"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L198  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### v1.0.0"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD032/blanks-around-lists
+    L199  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 初始版本发布"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD022/blanks-around-headings
+    L205  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 许可证"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/SKILL.md — MD047/single-trailing-newline
+    L206  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L3  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 基本信息"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L4  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **姓名**: [请输入姓名]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L9  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 本周工作概览"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L12  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## ✅ 本周完成"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L13  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 需求开发"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L13  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 需求开发"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L14  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [需求名称] - [状态：已完成/进行中/阻塞]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L19  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### Bug修复"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L20  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [Bug编号/标题] - [状态：已修复/验证中..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L25  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 代码优化"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L26  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [优化内容]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L31  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 技术研究"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L32  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [研究主题]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L37  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🔄 进行中"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L38  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 当前任务"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L38  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 当前任务"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L39  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [任务名称] - [进度：XX%]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L44  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 代码审查"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L45  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [PR链接] - [状态：待审查/审查中/已合并..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L49  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🚧 阻碍与风险"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L50  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 技术阻碍"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L50  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 技术阻碍"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L51  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [问题描述]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L56  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 项目风险"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L57  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [ ] [风险描述]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L62  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 📊 关键指标"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L63  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 开发指标"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L63  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 开发指标"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L64  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 代码提交次数：[X]次"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L69  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 质量指标"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L70  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 单元测试覆盖率：[XX]%"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L75  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 性能指标"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L76  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- 接口响应时间：[X]ms"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L81  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 📅 下周计划"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L82  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 优先级 P0（必须完成）"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L82  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 优先级 P0（必须完成）"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L83  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. [任务名称]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L88  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 优先级 P1（重要）"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L89  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. [任务名称]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L94  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 优先级 P2（次要）"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L95  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. [任务名称]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L100  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 💡 思考与建议"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L101  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 技术改进"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L101  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 技术改进"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L102  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [建议内容]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L107  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 流程优化"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L108  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [建议内容]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L113  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 团队协作"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L114  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [建议内容]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L119  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🎯 个人成长"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L120  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 本周学习"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L120  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 本周学习"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L121  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [学习内容]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L126  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 下周学习计划"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD032/blanks-around-lists
+    L127  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- [计划学习内容]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD022/blanks-around-headings
+    L132  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 📝 备注"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/engineer.md — MD047/single-trailing-newline
+    L137  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L3  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 基本信息"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L4  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **姓名**: [请输入姓名]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L9  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 执行摘要"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L12  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 📈 项目整体状态"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L13  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 健康度评分"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L13  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 健康度评分"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L14  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **整体健康度**: [绿色/黄色/红色]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L19  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 关键指标"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD058/blanks-around-tables
+    L20  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| 指标 | 本周 | 上周 | 变化 | 目标 | 状态 ..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L27  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🎯 本周重点成果"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L28  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 已完成里程碑"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L28  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 已完成里程碑"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L29  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[里程碑名称]**"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L35  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 关键交付物"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L36  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[交付物名称]**"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L42  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🔄 进行中工作"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L43  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 当前迭代进展"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L43  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 当前迭代进展"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD058/blanks-around-tables
+    L44  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| 任务/用户故事 | 负责人 | 状态 | 进度 | 预计..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L48  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 依赖关系跟踪"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD058/blanks-around-tables
+    L49  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| 依赖项 | 提供方 | 接收方 | 状态 | 预计解决 ..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L53  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🚨 风险与问题"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L54  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 已识别风险"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L54  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 已识别风险"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L55  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[风险标题] - [风险等级: 高/中/低]**"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L63  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 当前问题"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L64  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[问题标题] - [优先级: P0/P1/P2]*..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L72  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 👥 团队状态"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L73  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 人员情况"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L73  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 人员情况"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD058/blanks-around-tables
+    L74  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| 成员 | 角色 | 本周投入 | 状态 | 备注 |"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L78  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 团队士气"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L79  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **整体士气**: [高涨/正常/低落]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L83  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 能力建设"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L84  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **培训完成**: [培训内容]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L88  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 💰 预算与资源"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L89  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 预算执行"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L89  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 预算执行"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD058/blanks-around-tables
+    L90  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| 预算类别 | 计划 | 实际 | 差异 | 说明 |"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L97  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 资源使用"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L98  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **人力资源**: [使用率 XX%]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L103  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🤝 干系人沟通"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L104  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 客户沟通"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L104  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 客户沟通"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L105  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **沟通频率**: [每日/每周/每两周]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L110  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 内部沟通"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L111  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **团队会议**: [会议纪要摘要]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L115  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 📅 下周计划"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L116  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 关键任务"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L116  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 关键任务"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L117  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[任务名称] - [优先级: P0/P1/P2]*..."]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L124  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 里程碑计划"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD058/blanks-around-tables
+    L125  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| 里程碑 | 计划完成 | 当前状态 | 风险 |"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L129  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 会议安排"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD058/blanks-around-tables
+    L130  MD058/blanks-around-tables
+    Tables should be surrounded by blank lines [Context: "| 会议 | 时间 | 参与人 | 议题 |"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L134  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 📊 数据与度量"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L135  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 项目度量"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L135  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 项目度量"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L136  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **燃尽图趋势**: [描述趋势]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L141  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 质量度量"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L142  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "- **缺陷密度**: [每千行代码X个缺陷]"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L147  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 💡 改进建议"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L148  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 流程改进"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L148  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 流程改进"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L149  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[改进点]**"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L155  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 工具改进"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L156  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[工具/系统]**"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L162  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "## 🎯 决策需求"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L163  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Above] [Context: "### 需要批准的决策"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L163  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 需要批准的决策"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L164  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[决策事项]**"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD022/blanks-around-headings
+    L171  MD022/blanks-around-headings
+    Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "### 需要协调的资源"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD032/blanks-around-lists
+    L172  MD032/blanks-around-lists
+    Lists should be surrounded by blank lines [Context: "1. **[资源需求]**"]
+
+  [ERROR] pmo-skill/skills/weekly-report-collector/templates/manager.md — MD047/single-trailing-newline
+    L182  MD047/single-trailing-newline
+    Files should end with a single newline character
+
+  [ERROR] email-send — frontmatter.missing.tags
+    frontmatter.missing.tags
+    缺少必需字段 'tags'（标签列表，用于搜索和分类，不大于5个）
+
+  [ERROR] email-send — frontmatter.missing.version
+    frontmatter.missing.version
+    缺少必需字段 'version'（语义化版本号）
+
+  [ERROR] email-send — section.missing-required
+    section.missing-required
+    缺少必需章节: '概述'
+
+  [ERROR] email-send — section.missing-required
+    section.missing-required
+    缺少必需章节: '前置条件'
+
+  [ERROR] email-send — section.missing-required
+    section.missing-required
+    缺少必需章节: '核心命令'
+
+  [ERROR] email-send — section.missing-required
+    section.missing-required
+    缺少必需章节: '参数确认'
+
+  [ERROR] email-send — section.missing-required
+    section.missing-required
+    缺少必需章节: '参考文档'
+
+  [ERROR] gen-week-reporter-email-automation — section.missing-required
+    section.missing-required
+    缺少必需章节: '参考文档'
+
+  [ERROR] smart-weekly-report — frontmatter.parse-error
+    frontmatter.parse-error
+    SKILL.md YAML frontmatter 解析失败，请检查 --- 包裹内的 YAML 语法
+
+  [ERROR] weekly-report-collector — frontmatter.missing.tags
+    frontmatter.missing.tags
+    缺少必需字段 'tags'（标签列表，用于搜索和分类，不大于5个）
+
+  [ERROR] weekly-report-collector — frontmatter.missing.version
+    frontmatter.missing.version
+    缺少必需字段 'version'（语义化版本号）
+
+  [ERROR] weekly-report-collector — section.missing-required
+    section.missing-required
+    缺少必需章节: '前置条件'
+
+  [ERROR] weekly-report-collector — section.missing-required
+    section.missing-required
+    缺少必需章节: '参考文档'
+
+  [WARNING] email-send — frontmatter.field.unknown
+    frontmatter.field.unknown
+    Unknown frontmatter field 'metadata'. Known fields: agent, allowed-tools, author, context, description, disable-model-invocation, hooks, mode, model, 
+
+  [WARNING] email-send — disclosure.metadata-budget
+    disclosure.metadata-budget
+    Frontmatter uses ~124 tokens, exceeding the recommended ~100-token metadata budget. Keep metadata concise; move details to the body.
+
+  [WARNING] gen-week-reporter-email-automation — frontmatter.field.unknown
+    frontmatter.field.unknown
+    Unknown frontmatter field 'created'. Known fields: agent, allowed-tools, author, context, description, disable-model-invocation, hooks, mode, model, n
+
+  [WARNING] smart-weekly-report — disclosure.body-budget
+    disclosure.body-budget
+    Body uses ~5110 tokens, exceeding the recommended 5000-token instruction budget. Move large content blocks to referenced files in a resources/ directo
+
+  [WARNING] weekly-report-collector — frontmatter.field.unknown
+    frontmatter.field.unknown
+    Unknown frontmatter field 'metadata'. Known fields: agent, allowed-tools, author, context, description, disable-model-invocation, hooks, mode, model, 
+
+  [WARNING] weekly-report-collector — disclosure.metadata-budget
+    disclosure.metadata-budget
+    Frontmatter uses ~127 tokens, exceeding the recommended ~100-token metadata budget. Keep metadata concise; move details to the body.
+
+  [WARNING] email-send — section.missing-recommended
+    section.missing-recommended
+    缺少推荐章节: '输出格式'
+
+  [WARNING] email-send — section.missing-recommended
+    section.missing-recommended
+    缺少推荐章节: '验证方法'
+
+  [WARNING] email-send — section.missing-recommended
+    section.missing-recommended
+    缺少推荐章节: '最佳实践'
+
+  [WARNING] email-send — section.missing-recommended
+    section.missing-recommended
+    缺少推荐章节: '注意事项'
+
+  [WARNING] gen-week-reporter-email-automation — frontmatter.version-format
+    frontmatter.version-format
+    version '1.0' 不符合语义化版本号格式 (如 2.0.0)
+
+  [WARNING] gen-week-reporter-email-automation — section.missing-recommended
+    section.missing-recommended
+    缺少推荐章节: '输出格式'
+
+  [WARNING] weekly-report-collector — section.missing-recommended
+    section.missing-recommended
+    缺少推荐章节: '验证方法'
+
+  [WARNING] weekly-report-collector — section.missing-recommended
+    section.missing-recommended
+    缺少推荐章节: '最佳实践'
+
+── 4. Fix Strategies ──
+
+  [ERROR] frontmatter.name.required
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] frontmatter.description.required
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD033
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD041
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD013
+    Strategy: Break long lines; or disable for code blocks/tables in .markdownlint.json: MD013: {code_blocks: false, tables: false}
+
+  [ERROR] MD058
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD047
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD032
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD022
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD031
+    Strategy: Add blank lines before and after fenced code blocks
+
+  [ERROR] MD040
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD034
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] MD036
+    Strategy: Replace **text** pseudo-headings with ### text real headings
+
+  [ERROR] frontmatter.missing.tags
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] frontmatter.missing.version
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] section.missing-required
+    Strategy: Review the issue and apply best practices for this category
+
+  [ERROR] frontmatter.parse-error
+    Strategy: Review the issue and apply best practices for this category
+
+  [WARNING] frontmatter.field.unknown
+    Strategy: Add field to skillcheck.toml extension_fields, or remove from frontmatter
+
+  [WARNING] disclosure.metadata-budget
+    Strategy: Move non-essential frontmatter fields to the body section to reduce token count below 100
+
+  [WARNING] disclosure.body-budget
+    Strategy: Review the issue and apply best practices for this category
+
+  [WARNING] section.missing-recommended
+    Strategy: Review the issue and apply best practices for this category
+
+  [WARNING] frontmatter.version-format
+    Strategy: Review the issue and apply best practices for this category
+
+========================================================================
+  Gate Verdict: FAIL  |  skillcheck FAIL  markdownlint FAIL  skill-scanner OK  hwcloud-spec FAIL
+========================================================================

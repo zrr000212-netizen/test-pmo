@@ -3,7 +3,7 @@ name: gen-week-reporter-email-automation
 description: 完整的周报生成和邮件发送自动化工作流程 - 从生成周报到发送HTML邮件的完整流程
 tags: [周报, 邮件, 自动化, 工作流程, gen-week-reporter]
 author: zrr
-version: 1.0
+version: 1.0.0
 created: 2026-04-21
 ---
 

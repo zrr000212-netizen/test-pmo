@@ -1,6 +1,8 @@
 ---
 name: weekly-report-collector
 description: "周报收集器 - 交互式收集周报内容，支持多种输入方式和模板。与 smart-weekly-report 和 email-send 技能集成，实现完整的周报管理流程。"
+tags: [weekly-report, collector, email]
+version: 1.0.0
 metadata:
   {
     "openclaw":

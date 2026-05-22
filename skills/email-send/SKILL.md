@@ -1,6 +1,8 @@
 ---
 name: email-send
 description: "Send a quick email via SMTP using `msmtp` without opening a full mail client."
+tags: [email, smtp, msmtp]
+version: 1.0.0
 metadata:
   {
     "openclaw":

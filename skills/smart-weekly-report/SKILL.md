@@ -1,3 +1,10 @@
+---
+name: smart-weekly-report
+description: "周报生成器 - 将零散工作信息整理成结构化周报，支持多种职业角色和输出格式"
+tags: [weekly-report, report, automation]
+version: 1.0.0
+---
+
 # 周报生成器 · Weekly Report Generator
 
 > **使用方法**：将本文件内容复制到你使用的 AI 对话框中，然后用自然语言描述你本周的工作情况，AI 将自动生成结构化周报。
