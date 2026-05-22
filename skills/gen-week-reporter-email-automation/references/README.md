@@ -114,10 +114,10 @@ python3 send_clean_report.py
 
 默认配置：
 
-- **发件人**：zrr <<zrr000212@163.com>>
-- **收件人**：<zhangranran6@huawei.com>
+- **发件人**：zrr <${SENDER_EMAIL}>
+- **收件人**：${RECEIVER_EMAIL}
 - **SMTP服务器**：smtp.163.com:465 (SSL)
-- **客户端授权码**：KCshe35VeVGRTDqV
+- **客户端授权码**：${SMTP_AUTH_CODE}
 
 修改配置：编辑脚本文件中的相关变量。
 
@@ -274,5 +274,5 @@ grep "$(date +%Y-%m-%d)" /home/developer/Desktop/email_send_log.txt
 如有问题或建议，请联系：
 
 - 作者：zrr
-- 邮箱：<zrr000212@163.com>
+- 邮箱：${SENDER_EMAIL}
 - 更新时间：2026年04月21日

@@ -7,6 +7,11 @@ import os
 import sys
 from datetime import datetime
 
+# Email configuration from environment variables
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "your-email@163.com")
+SENDER_NAME = os.environ.get("SENDER_NAME", "your-name")
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL", "recipient@example.com")
+
 def print_header():
     """打印标题"""
     print("=" * 70)
@@ -32,8 +37,8 @@ def print_usage():
     
     print("\n📧 邮箱配置:")
     print("-" * 50)
-    print("发件人: zrr <zrr000212@163.com>")
-    print("收件人: zhangranran6@huawei.com")
+    print(f"发件人: {SENDER_NAME} <{SENDER_EMAIL}>")
+    print(f"收件人: {RECEIVER_EMAIL}")
     print("SMTP服务器: smtp.163.com:465 (SSL)")
     
     print("\n🗂️ 文件位置:")

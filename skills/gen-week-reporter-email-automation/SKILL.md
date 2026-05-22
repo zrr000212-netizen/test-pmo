@@ -46,11 +46,25 @@ created: 2026-04-21
 
 ### 1. 邮箱配置
 
-- 发件人邮箱：<zrr000212@163.com>
-- 发件人名称：zrr
-- 客户端授权码：KCshe35VeVGRTDqV
-- 收件人邮箱：<zhangranran6@huawei.com>
-- SMTP服务器：smtp.163.com:465 (SSL)
+所有邮箱配置通过环境变量设置，不要硬编码在代码中：
+
+| 环境变量 | 说明 | 默认值 | 必需 |
+|----------|------|--------|------|
+| `SENDER_EMAIL` | 发件人邮箱 | `your-email@163.com` | 是 |
+| `SENDER_NAME` | 发件人名称 | `your-name` | 是 |
+| `SMTP_AUTH_CODE` | SMTP客户端授权码 | (无) | 是 |
+| `RECEIVER_EMAIL` | 收件人邮箱 | `recipient@example.com` | 是 |
+| `SMTP_SERVER` | SMTP服务器地址 | `smtp.163.com` | 否 |
+| `SMTP_PORT` | SMTP端口 | `465` | 否 |
+
+配置示例：
+
+```bash
+export SENDER_EMAIL="your-email@163.com"
+export SENDER_NAME="your-name"
+export SMTP_AUTH_CODE="your-auth-code"
+export RECEIVER_EMAIL="recipient@example.com"
+```
 
 ### 2. 文件依赖
 
@@ -271,17 +285,19 @@ gen-week-reporter技能会自动：
 
 ## 配置修改
 
-如果需要修改邮箱配置，编辑以下脚本中的相关变量：
+邮箱配置通过环境变量管理，无需修改代码。设置方式：
 
-```python
-# 在send_clean_report.py中修改
-sender_email = "<zrr000212@163.com>"
-sender_name = "zrr"
-receiver_email = "<zhangranran6@huawei.com>"
-password = "KCshe35VeVGRTDqV"  # 客户端授权码
-smtp_server = "smtp.163.com"
-smtp_port = 465
+```bash
+# 设置环境变量（推荐写入 ~/.bashrc 或 .env 文件）
+export SENDER_EMAIL="your-email@163.com"
+export SENDER_NAME="your-name"
+export SMTP_AUTH_CODE="your-auth-code"
+export RECEIVER_EMAIL="recipient@example.com"
+export SMTP_SERVER="smtp.163.com"
+export SMTP_PORT="465"
 ```
+
+或在 `templates/config.py` 中修改默认值（不推荐提交到版本控制）。
 
 ## 故障排除
 
@@ -429,7 +445,7 @@ grep "$(date +%Y-%m-%d)" /home/developer/Desktop/email_send_log.txt
 
 ```python
 # 修改send_clean_report.py
-receiver_emails = ["<zhangranran6@huawei.com>", "other@example.com"]
+receiver_emails = ["${RECEIVER_EMAIL}", "other@example.com"]
 ```
 
 ### 2. 附件功能
@@ -506,5 +522,5 @@ tail -10 /home/developer/Desktop/email_send_log.txt
 如有问题或建议，请联系：
 
 - 作者：zrr
-- 邮箱：<zrr000212@163.com>
+- 邮箱：通过 SENDER_EMAIL 环境变量配置
 - 更新时间：2026年04月21日

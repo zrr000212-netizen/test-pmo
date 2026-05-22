@@ -1,17 +1,26 @@
 # 周报生成与邮件发送自动化系统配置
 # 配置文件模板
+import os
+
+# ======================
+# 环境变量说明
+# ======================
+# SENDER_EMAIL   - 发件人邮箱地址（默认: your-email@163.com）
+# SENDER_NAME    - 发件人显示名称（默认: your-name）
+# RECEIVER_EMAIL - 收件人邮箱地址（默认: recipient@example.com）
+# SMTP_AUTH_CODE - SMTP客户端授权码（默认: 空，必须设置才能发送邮件）
 
 # ======================
 # 邮箱配置
 # ======================
 
 # 发件人邮箱配置
-SENDER_EMAIL = "zrr000212@163.com"
-SENDER_NAME = "zrr"
-RECEIVER_EMAIL = "zhangranran6@huawei.com"
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "your-email@163.com")
+SENDER_NAME = os.environ.get("SENDER_NAME", "your-name")
+RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL", "recipient@example.com")
 
-# 客户端授权码（需要保密）
-PASSWORD = "KCshe35VeVGRTDqV"
+# 客户端授权码（需要保密，通过环境变量 SMTP_AUTH_CODE 传入）
+PASSWORD = os.environ.get("SMTP_AUTH_CODE", "")
 
 # SMTP服务器配置
 SMTP_SERVER = "smtp.163.com"
