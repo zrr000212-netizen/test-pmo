@@ -280,6 +280,7 @@ export WEEKLY_REPORT_AUTO_SEND="true"
 ### 常见问题
 
 1. **权限错误**
+
    ```bash
    # 确保有写入权限
    chmod +x scripts/*.py
@@ -287,6 +288,7 @@ export WEEKLY_REPORT_AUTO_SEND="true"
    ```
 
 2. **Python依赖问题**
+
    ```bash
    # 确保使用Python 3.8+
    python3 --version
@@ -296,6 +298,7 @@ export WEEKLY_REPORT_AUTO_SEND="true"
    ```
 
 3. **配置文件问题**
+
    ```bash
    # 重新生成配置文件
    rm ~/.weekly-report-collector/config.json
@@ -303,6 +306,7 @@ export WEEKLY_REPORT_AUTO_SEND="true"
    ```
 
 4. **模板找不到**
+
    ```bash
    # 检查模板文件
    ls -la templates/
@@ -400,6 +404,7 @@ print(f"周报已保存到: {saved_path}")
 ## 支持与反馈
 
 如有问题或建议，请：
+
 1. 检查日志文件
 2. 使用 `--debug` 参数运行
 3. 查看 `examples/` 目录中的示例
